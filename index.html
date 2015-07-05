@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>D3 test</title>
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.css">
+
+    <script type="text/javascript" src="http:\\avantitutti.com/js/d3.js"></script>
+    <script type="text/javascript" src="http:\\avantitutti.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http:\\avantitutti.com/js/jquery-ui.min.js"></script>
+
+    <style type="text/css">
+
+        body {
+            background-color: #02080D;
+        }
+
+        #resume_container {
+            width: 800px;
+            height: 450px;
+        }
+        .number_circle {
+            fill: #0FE7F5;
+            opacity: 0.2;
+        }
+        text {
+            fill: #0FE7F5;
+            opacity: 1;
+            font-family: "Arial";
+        }
+        .link_list {}
+        .link_list li{
+            display: inline-block;
+            margin: 0 5px 0 0;
+            text-align: center;
+        }
+        .link_list li a{
+            display: block;
+            width: 60px;
+            font-family: "Arial";
+            font-size: 15px;
+            text-decoration: none;
+            color: #000000;
+            background-color: #0FE7F5;
+            padding: 7px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .link_list li a:hover{
+            background-color: #ffffff;
+        }
+
+    </style>
+
+    <script src="resume/resume.js"></script>
+</head>
+
+<body>
+
+<div id="resume_container"></div>
+<ul class="link_list">
+    <li><a href="#" onclick="add()">Add</a></li>
+    <li><a href="#" onclick="remove()">Remove</a></li>
+    <li><a href="#" onclick="dance()">Dance</a></li>
+</ul>
+</body>
+</html>
