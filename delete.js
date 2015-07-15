@@ -1,4 +1,4 @@
-d3.csv("data/resume.csv", function(data) {
+d3.csv("data/tagsCountBlithe.csv", function(data) {
 
     var width = 700 ,
         height = 700 ;
