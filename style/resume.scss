@@ -1,0 +1,17 @@
+#resume_container {
+  @include text();
+}
+.creative_circle {
+  fill: rgba(89, 28, 45, 1);
+  opacity: 0.8;
+}
+
+.technical_circle{
+  fill: rgba(62, 33, 74, 1);
+  opacity: 0.8;
+}
+
+.award_circle{
+  fill: rgba(21, 20, 67, 1);
+  opacity: 0.8;
+}
