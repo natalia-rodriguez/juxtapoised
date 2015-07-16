@@ -1,2 +1,61 @@
 @import "style/resume";
 @import "style/style";
+
+$grey: #333;
+
+title{
+
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+  p {
+    font-family: langdon, sans;
+    font-size: 181px;
+    color: $grey;
+    line-height: 111px;
+    letter-spacing: 0.02em;
+
+  }
+}
+
+
+.img-circle {
+  border-radius: 50%;
+}
+
+@mixin text($fontSize:auto , $lineHeight:auto) {
+  color: $grey;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+p{
+  margin: 15px;
+}
+
+
+text{
+  @include text(22px, 28px);
+}
+
+
+#resume_container {
+  @include text();
+}
+.creative_circle {
+  fill: rgba(89, 28, 45, 1);
+  opacity: 0.8;
+}
+
+.technical_circle{
+  fill: rgba(62, 33, 74, 1);
+  opacity: 0.8;
+}
+
+.award_circle{
+  fill: rgba(21, 20, 67, 1);
+  opacity: 0.8;
+}
