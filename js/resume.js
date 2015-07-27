@@ -7,15 +7,29 @@
         var w = window.innerWidth;
         var h = 550;
         var nodes = [];
-        var x = d3.scale.linear().domain([0, 1]).rangeRound([0, w]);
-        var y = d3.scale.linear().domain([0, 1]).rangeRound([0, h]);
         var r = d3.scale.linear().domain([0, 1]).rangeRound([1, 6]);
         var t = d3.scale.linear().domain([0, 1]).rangeRound([1, 1.45]);
         var vis;
-        // in the head
+        var tooltip = CustomTooltip("blithe_tooltip", 240);
         var intervalHandle = null;
 
-        console.log("x", x(Math.random()));
+        function x(d){
+            var max = w - r(d.r);
+            var min = r(d.r);
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+
+
+        function y(d){
+            var max = h - r(d.r);
+            var min = r(d.r);
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+
+        function OpenInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
 
         data.forEach(function (d, i) {
             var node = {
@@ -27,18 +41,15 @@
                 role: d.position,
                 category: d.type,
                 bucket: d.group,
-                x: x(Math.random()),
-                y: y(Math.random())
+                link: d.link
             };
             nodes.push(node);
         });
 
         vis = d3.select("#resume_container")
             .append("svg:svg")
-            .attr("width", w+50)
-            .attr("height", h+50)
-            .on('click', function(){
-            clearInterval(intervalHandle); timeBuckets();});
+            .attr("width", w)
+            .attr("height", h);
 
 
         var circles = vis.selectAll(".node")
@@ -49,7 +60,7 @@
             .append("g")
             .attr("class", "node")
             .attr("transform", function (d) {
-                return "translate(" + d.x  + "," + d.y + ")"
+                return "translate(" + x(d) + "," + y(d) + ")"
             });
 
         circles.append("text")
@@ -66,29 +77,22 @@
             });
 
         circles.append("circle")
-            .attr("class", function (d) {
-                if(d.category.substring(0,1) === "T"){
-                    return "technical_circle";
-                }
-                if(d.category.substring(0,1) === "C"){
-                    return "creative_circle";
-                }
-                else{return "award_circle";}
-            })
+            .attr("class", function(d){return getClass(d);})
             .attr({'r': 0})
             .transition().duration(3000).ease('elastic')
             .attr("r", function (d) {
                 return r(d.r)
             });
 
-        circles.on('click', function(d){
-            clearInterval(intervalHandle);
-            timeBuckets();
-            console.log("d click", d);
-            spotlight(d) });
 
-        //.on('click', function(d){ details(d); lineUp();  });;
 
+
+
+        circles.on("mouseover", function(d, i) {show_details(d, i, this); pause(); clearInterval(intervalHandle);} )
+            .on("mouseout", function(d, i) {hide_details(d, i, this); dance(); intervalHandle = setInterval(dance, 2000);} )
+            .on("click", function(d){
+                if(d.link){
+                OpenInNewTab(d.link);}});
 
 
 
@@ -98,9 +102,7 @@
                  .transition()
                  .duration(3000)
                  .attr("transform", function (d, i) {
-                     d.x = x(Math.random());
-                     d.y = y(Math.random());
-                     return "translate(" + d.x + "," + d.y + ")"
+                     return "translate(" + x(d) + "," + y(d) + ")"
                  });
 
              yolo.select("circle")
@@ -112,6 +114,12 @@
                  .duration(3000);
 
          }//end dance
+
+        function pause(){
+            var yolo = vis.selectAll(".node");
+            yolo.transition()
+                .duration( 0 );
+        }
 
 
         function timeBuckets(){
@@ -132,68 +140,7 @@
             buckets.select("text")
                 .transition()
                 .duration(3000);
-
-        //.attr("x", 50)
-        //        .attr("y", function(d,i){ return i+20})
         }
-
-        function spotlight(d) {
-
-            console.log("d", d);
-            var item = d3.select("#resume_container")
-                .append("svg:svg")
-                .attr("width", 300)
-                .attr("height", 200)
-                .attr("x", w/2 )
-                .attr("y", h/2);
-
-
-
-            item.append("text")
-                .attr("class", "title")
-                .attr("dy", ".3em")
-                .attr("text-anchor", "top")
-                .transition()
-                .duration(300)
-                .text(function () {
-                    return d.name.toUpperCase();
-                });
-
-
-            item.append("text")
-                .attr("class", "description")
-                .attr("dy", ".3em")
-                .attr("text-anchor", "bottom")
-                .transition()
-                .duration(300)
-                .text(function () {
-                    return d.description;
-                });
-
-            item.append("text")
-                .attr("class", "position")
-                .attr("dy", ".3em")
-                .attr("text-anchor", "middle")
-                .transition()
-                .duration(300)
-                .text(function () {
-                    return d.position;
-                });
-
-            item.append("text")
-                .attr("class", "date")
-                .attr("dy", ".3em")
-                .attr("text-anchor", "top")
-                .transition()
-                .duration(300)
-                .text(function () {
-                    return d.date;
-                });
-        }//spotlight
-
-
-
-
 
         function year(d){
             if(d.bucket === 13)
@@ -205,12 +152,30 @@
         }
 
 
-        // in the onclick to set
         intervalHandle = setInterval(dance, 1200);
 
-        // in the onclick to clear
 
+        function show_details(data, i, element) {
+            var content = "<span class=\"name\">" +  data.name + "</span><br/>";
+            content +="<span class=\"position\">" + data.role + "</span><br/>";
+            content +="<span class=\"date\">" + data.date + "</span><br/>";
+            content +="<span class=\"description\">" + data.description + "</span><br/>";
+            tooltip.showTooltip(content, d3.event);
+        }
 
+        function hide_details(data, i, element) {
+            tooltip.hideTooltip();
+        }
 
-
+        function getClass(d) {
+            if(d.category.substring(0,1) === "T"){
+                return "technical_circle";
+            }
+            if(d.category.substring(0,1) === "C"){
+                return "creative_circle";
+            }
+            else{return "award_circle";}
+        }
     })//end csv
+
+

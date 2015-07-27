@@ -1,28 +1,34 @@
-name,type,position,description,size,date,group
-Major in Computer Science,Technical,Student,- Graduated from Southwestern University with a Bachelor of Arts in Computer Science and departmental honors,15,Spring 2015,15
-Minor in English,Creative,Student,- Graduated from Southwestern University with a Minor in English,8,Spring 2015,15
-Minor in Business,Technical,Student,- Graduated from Southwestern University with a Minor in Business,8,Spring 2015,15
+name,type,position,description,size,date,group,link
+Major in Computer Science,Technical,Student,- Graduated from Southwestern University with a Bachelor of Arts in Computer Science and departmental honors,15,Spring 2015,15,
+Minor in English,Creative,Student,- Graduated from Southwestern University with a Minor in English,8,Spring 2015,15,
+Minor in Business,Technical,Student,- Graduated from Southwestern University with a Minor in Business,8,Spring 2015,15,
 Real People Real Beauty,Creative,Founder,"- Founded, organized and advertised photography campaign for positive self-image and confidence
-- Invited to speak to middle school girls about these issues
-- realpeoplerealbeauty.tumblr.com",15,Spring 2013 - Spring 2015,15
-Indicative,Technical,Software Engineer Intern,- Indicative is a data analytics startup in NYC -Coded heavily in Angular JS,13,Summer 2015,15
-NCWIT & HP Collegiate Award,Technical,Recipient,"- Sponsored by Hewlett-Packard, the NCWIT Collegiate Award honors the outstanding technical accomplishments of undergraduate women at the junior level and above. Conferred upon three students annually, the award recognizes a specific technical project as the culmination of the student’s undergraduate computing career",10,Summer 2015,15
-Capstone Project,Technical,Team Data Member,- Senior thesis project consisted of a group of students making a scavenger hunt application for the university using Ruby on Rails,10,Spring 2015,15
+- Invited to speak to middle school girls about these issues",15,Spring 2013 - Spring 2015,15,www.realpeoplerealbeauty.tumblr.com
+Indicative,Technical,Software Engineer Intern,"- Indicative is a data analytics startup in NYC
+- Developed in both backend and front-end
+- Applied knowledge of Angular JS",13,Summer 2015,15,http://www.indicative.com/
+NCWIT & HP Collegiate Award,Award,Recipient,"- Sponsored by Hewlett-Packard, the NCWIT Collegiate Award honors the outstanding technical accomplishments of undergraduate women at the junior level and above.
+-Conferred upon three students annually, the award recognizes a specific technical project as the culmination of the student’s undergraduate computing career",10,Summer 2015,15,https://www.ncwit.org/news/ncwit-and-hp-honor-distinguished-technical-accomplishments-college-women
+Capstone Project,Technical,Team Data Member,- Senior thesis project consisted of a group of students making a Scavenger Hunt application for the university using Ruby on Rails,10,Spring 2015,15,
 Anita Borg Board Of Trustees,"Creative, Technical",Board of Trustee - Student Member,"- Anita Borg is the leading nonprofit inspiring Women in Technology, annually organizing the Grace Hopper Conference for Women in Computing
-- Elected as member of board of industry executives",13,Fall 2014 - Fall 2016,15
-Spyglass Southwestern Magazine,Creative,Editor in Chief,"- Re-branded the layout and design of the student magazine and introduced themes, double the staff with writers and designers",13,Fall 2014- Spring 2015,15
-Richard Tapia Poster,Technical,Presenter,- Presented data visualization project at the Richard Tapia In Computing Conference ‘15 and at the Southwestern University Creative Works Symposum,10,Spring 2015,15
-Upsilon Pi Epsilon,Award,Member,"- ""To be eligible for election to membership, undergraduate students must rank in the upper 35% of the class and shall have attained a general scholarship rating, in all college work thus far completed, of not less than 3.0/4.0.""",5,Fall 2011-Spring 2015,15
-Paideia Honors Scholar,Award,Scholar,- http://www.southwestern.edu/paideia/,5,Spring 2015,15
-Bilingual in Spanish and English,Creative,,"- Born in Mexico, and raised in the United States, I speak both Spanish and English",5,Summer 2015,15
+- Elected as member of board of industry executives",13,Fall 2014 - Fall 2016,15,http://anitaborg.org/about-us/dedicated-leadership/abi-board-of-trustees/
+Spyglass Southwestern Magazine,Creative,Editor in Chief,"- Re-branded the layout and design of the student magazine and introduced themes, double the staff with writers and designers",13,Fall 2014- Spring 2015,15,
+Richard Tapia Poster,Technical,Presenter,- Presented data visualization project at the Richard Tapia In Computing Conference ‘15 and at the Southwestern University Creative Works Symposum,10,Spring 2015,15,
+Upsilon Pi Epsilon,Award,Member,"- ""To be eligible for election to membership, undergraduate students must rank in the upper 35% of the class and shall have attained a general scholarship rating, in all college work thus far completed, of not less than 3.0/4.0.""",5,Fall 2011-Spring 2015,15,
+Paideia Honors Scholar,Award,Scholar,,5,Spring 2015,15,http://www.southwestern.edu/paideia/
+Bilingual in Spanish and English,Creative,,"- Born in Mexico, and raised in the United States, I speak both Spanish and English.",5,Summer 2015,15,
 Temboo,"Creative, Technical",Product Intern,"- Used the Temboo tool, an IoT library, to make and showcase creative projects, blogged and managed social media
-- Pitched, planned, and led a “Making with Arduino” workshop at GirlDevelopIt NYC",13,Summer 2014,14
-Selfie Blithe Data Visualization,"Creative, Technical",Creator,- Coded a data visualization on the topics of body image using D3.js on personal domain -Awarded NCWIT Collegiate Award for project -Presented project at Richard Tapia Conference for diversity in computing and Southwestern Creative Work Symposium,15,Fall 2014,14
-Tumblr White House Blogger Attendee,Creative,Blogger,,5,Summer 2014,14
-Fast Company ,Creative,Fast Co.Labs Edit Intern,"- Wrote articles published in both Fast Company online and print ranging on tutorials for journalists interested in learning to code to videos on DIY projects - Coded art installation of touch sensitive plants at the Fast Company Headquarters - Interviewed CEOs of Startups, and other industry personas for narratives about technology",15,Fall 2013,13
-Teaching Teachers in Technology,Technical,Student Teacher,"- Co-led lectures and assisted professor to educate high school teachers in the field of Computer Science, including how to code in JavaScript, HTML, and use Sage, Winplot, and Excel to promote Computer Science education along with two other students",8,Summer 2013,13
-Megaphone University Newspaper,Creative,Writer,"- Wrote articles for paper and co-interviewed Jane Goodall, grant recipient to attend the National Geographic photo-journalism seminar in Los Angeles",10,Fall 2011- Fall 2013,13
-Creative Action Network Book Designer,Creative,Designer,- http://shop.thecreativeactionnetwork.com/products/a-tale-of-two-cities-by-natalia-rodriguez?variant=998133847,5,Fall 2013,13
-WordPress's Freshly Pressed,Award,Blogger,- Wordpress recognized contributed post to a blog as a fresh prespective: http://shinesobrightly.com/2013/04/22/the-analysis-why-doves-real-beauty-sketches-campaign-misses-the-mark/,5,Spring 2013,13
-Touchable Plants,"Creative, Technical",Co-Creator,,15,Fall 2013,13
-Summer Online Boutique,Creative Technical,Owner,"- Opened an online boutique on Style.ly for the summer, run from home with suppliers from China and Australia",8,Summer 2013,13
+- Pitched, planned, and led a “Making with Arduino” workshop at GirlDevelopIt NYC",13,Summer 2014,14,https://temboo.com/
+Selfie Blithe Data Visualization,"Creative, Technical",Creator,"- Coded a data visualization on the topics of body image using D3.js on personal domain
+-Awarded NCWIT Collegiate Award for project
+-Presented project at Richard Tapia Conference for diversity in computing and Southwestern Creative Work Symposium",15,Fall 2014,14,http://juxtapoised.com/selfieblithe/
+Tumblr White House Blogger Attendee,Creative,Blogger,,5,Summer 2014,14,
+Fast Company ,Creative,Fast Co.Labs Edit Intern,"- Wrote articles published in both Fast Company online and print ranging on tutorials for journalists interested in learning to code to videos on DIY projects
+- Coded art installation of touch sensitive plants at the Fast Company Headquarters
+- Interviewed CEOs of Startups, and other industry personas for narratives about technology",15,Fall 2013,13,http://www.fastcompany.com/3016968/how-one-industrious-undergrad-tweeted-photoshopped-and-hustled-her-way-into-her-dream-intern
+Teaching Teachers in Technology,Technical,Student Teacher,"- Co-led lectures and assisted professor to educate high school teachers in the field of Computer Science, including how to code in JavaScript, HTML, and use Sage, Winplot, and Excel to promote Computer Science education along with two other students",8,Summer 2013,13,
+Megaphone University Newspaper,Creative,Writer,"- Wrote articles for paper and co-interviewed Jane Goodall, grant recipient to attend the National Geographic photo-journalism seminar in Los Angeles",10,Fall 2011- Fall 2013,13,
+Creative Action Network Book Designer,Creative,Designer,- Designed two covers for a campaign promoting classical literature to a younger generation,5,Fall 2013,13,http://shop.thecreativeactionnetwork.com/products/a-tale-of-two-cities-by-natalia-rodriguez?variant=998133847
+WordPress's Freshly Pressed,Award,Blogger,- Wordpress recognized a blog post I wrote for Shine So Brightly as a fresh prespective: http://shinesobrightly.com/2013/04/22/the-analysis-why-doves-real-beauty-sketches-campaign-misses-the-mark/,5,Spring 2013,13,http://shinesobrightly.com/2013/04/22/the-analysis-why-doves-real-beauty-sketches-campaign-misses-the-mark/
+Touchable Plants,"Creative, Technical",Co-Creator,,15,Fall 2013,13,http://www.fastcolabs.com/3026612/hacking-house-plants-to-make-music-when-theyre-touched
+Summer Online Boutique,Creative Technical,Owner,"- Opened an online boutique on Style.ly for the summer, run from home with suppliers from China and Australia",8,Summer 2013,13,
