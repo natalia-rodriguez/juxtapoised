@@ -194,3 +194,9 @@ a:visited {
     text-transform: lowercase;
     color: #A6EEDB;
 }
+
+.label{
+    text-weight: heavy;
+    opacity: 2;
+    text-color: white;
+}

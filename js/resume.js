@@ -95,6 +95,20 @@
                 OpenInNewTab(d.link);}});
 
 
+    var creative ={
+        color: "#44D0AB",
+        name: "Creative"};
+
+    var technical= {
+        color: "#A6EEDB",
+        name: "Technical"};
+
+    var award ={color: "#FEB49F",
+        name: "Award"};
+
+    var mapkey = [creative, technical, award]  ;
+
+
 
          function dance() {
              var yolo = vis.selectAll(".node")
